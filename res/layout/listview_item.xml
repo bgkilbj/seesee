@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+        <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/load" />
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@id/item_image"
+                android:layout_marginRight="10dp"
+        
+        android:layout_alignTop="@id/item_image"
+        android:text="神医笔下有神经"
+        android:textSize="16sp" />
+    
+        <TextView
+        android:id="@+id/item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_title"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@id/item_title"
+        android:text="来自:天秤座心理"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_username"
+        android:layout_alignLeft="@id/item_username"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="2016-05-09 08:48:33"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/item_date"
+        android:layout_alignBottom="@id/item_date"
+        android:layout_marginRight="21dp"
+        android:layout_toLeftOf="@id/item_image"
+        android:text="热点"
+        android:textSize="12sp" />
+
+
+
+</RelativeLayout>
